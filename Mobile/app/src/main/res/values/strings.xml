@@ -6,4 +6,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="creer_un_compte">Creer un compte</string>
+    <string name="veuillez_entrer_un_nom_valide">Veuillez entrer un nom valide</string>
+    <string name="veuillez_entrer_un_email_valide">Veuillez entrer un email valide</string>
+    <string name="veuillez_entrer_un_mot_de_passe_d_au_moins_6_caracteres">Veuillez entrer un mot de passe d\'au moins 6 caracteres</string>
+    <string name="veuillez_entrer_une_adresse_valide">Veuillez entrer une adresse valide</string>
 </resources>
