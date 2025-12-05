@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,6 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        MainFragment mainFragment = new MainFragment();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.mainFrame, mainFragment)
+                .commit();
 
         AsyncHttpClient client = new AsyncHttpClient();
 

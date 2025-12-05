@@ -7,82 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="130dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            />
+    </Toolbar>
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/papa_john_s_pizza"
-            android:textColor="#FF999999" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/_3320_saint_martin_laval_ca_h2t_1a1"
-            android:textColor="#FF999999" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/_1_450_688_7000"
-            android:textColor="#FF999999" />
-
-        <TableRow android:gravity="center">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/pizza_deluxe" />
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="20dp"
-                android:src="@drawable/pizza_pepperonie" />
-        </TableRow>
-
-        <TableRow android:gravity="center">
-
-            <TextView
-                android:layout_marginEnd="20dp"
-                android:text="Pizza pepperonie"
-                android:textColor="#FF999999" />
-
-            <TextView
-                android:gravity="center"
-                android:text="Pizza fromage"
-                android:textColor="#FF999999" />
-        </TableRow>
-
-        <TableRow android:gravity="center">
-
-            <Button
-                android:layout_marginEnd="10dp"
-                android:text="Connexion" />
-
-            <Button
-                android:layout_marginStart="10dp"
-                android:text="Inscription" />
-        </TableRow>
-    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
