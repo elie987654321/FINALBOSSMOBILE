@@ -16,27 +16,32 @@ namespace BackendFinalBossCegep.Controllers
         }
 
         [HttpGet(Name="Connexion")]
-        public Compte? GetCompteByEmailAndPassword(string email, string password)
+        public ActionResult<Compte> GetCompteByEmailAndPassword(string email, string password)
         {
             Compte? compteTrouve = _dbContext.dbSetComptes.Where((compte) => compte.Email == email && compte.Password == password).FirstOrDefault();
-            return compteTrouve;
+
+            if (compteTrouve == null)
+            {
+                return NotFound();
+            }
+            return Ok(compteTrouve);
         }
 
-        [HttpGet(Name="Inscription")]
-        public Compte? CreateCompte(string email, string password, string name, string address, string phone)
+        [HttpPost(Name="Inscription")]
+        public ActionResult<Compte> CreateCompte(Compte compteJson)
         {
-            Compte? compteTrouve = _dbContext.dbSetComptes.Where((compte) => compte.Email == email).FirstOrDefault();
+            Compte? compteTrouve = _dbContext.dbSetComptes.Where((compte) => compte.Email == compteJson.Email).FirstOrDefault();
 
             if (compteTrouve != null)
             {
-                return null;
+                return Conflict("");
             }
             else
             {
-                Compte compte = new Compte(email, password, name, address, phone);
-                _dbContext.dbSetComptes.Add(compte);
+                _dbContext.dbSetComptes.Add(compteJson);
                 _dbContext.SaveChanges();
-                return compte;
+
+                return Ok(compteJson);
             }
         }
     }

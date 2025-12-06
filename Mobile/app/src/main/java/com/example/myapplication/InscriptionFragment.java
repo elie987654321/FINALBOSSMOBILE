@@ -16,6 +16,9 @@ import android.widget.TextView;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.google.gson.Gson;
+
+import org.json.JSONObject;
 
 import okhttp3.Headers;
 
@@ -47,7 +50,7 @@ public class InscriptionFragment extends Fragment
 
         editTextName = view.findViewById(R.id.inscriptionFragName);
         editTextEmail = view.findViewById(R.id.inscriptionFragEmail);
-        editTextPassword = view.findViewById(R.id.inscriptionFragAdresse);
+        editTextPassword = view.findViewById(R.id.inscriptionFragPassword);
         editTextAddress = view.findViewById(R.id.inscriptionFragAdresse);
         editTextPhone = view.findViewById(R.id.inscriptionFragPhone);
 
@@ -66,7 +69,21 @@ public class InscriptionFragment extends Fragment
                 requestParams.put("name", editTextName.getText().toString());
                 requestParams.put("address", editTextAddress.getText().toString());
                 requestParams.put("phone", editTextPhone.getText().toString());
-                client.get("http://10.0.2.2:5062/Compte/CreateCompte", requestParams, new JsonHttpResponseHandler() {
+
+                Compte compte = new Compte();
+                compte.email = editTextEmail.getText().toString();
+                compte.password = editTextPassword.getText().toString();
+                compte.address = editTextAddress.getText().toString();
+                compte.phone = editTextPhone.getText().toString();
+                compte.name = editTextName.getText().toString();
+
+                Gson gson = new Gson();
+
+
+
+                String jsonCompte = gson.toJson(compte);
+
+                client.post("http://10.0.2.2:5062/Compte/CreateCompte", jsonCompte,  new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Headers headers, JSON json) {
                         int t = 0;

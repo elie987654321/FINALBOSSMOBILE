@@ -1,31 +1,30 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
 import android.widget.FrameLayout;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.codepath.asynchttpclient.AsyncHttpClient;
-import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
-
-import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
+    DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(
-            findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        drawerLayout = findViewById(R.id.mainDrwayerLayout);
 
         MainFragment mainFragment = new MainFragment();
 
@@ -34,17 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.mainFrame, mainFragment)
                 .commit();
 
-        AsyncHttpClient client = new AsyncHttpClient();
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        client.get("http://10.0.2.2:5062/Compte?email=elie@allo.allo&password=password", new JsonHttpResponseHandler() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onSuccess(int statusCode, Headers headers, JSON json) {
-                int t = 0;
-            }
-
-            @Override
-            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-                int t = 0;
+            public void onClick(View view) {
+                drawerLayout.openDrawer(Gravity.LEFT);
             }
         });
     }

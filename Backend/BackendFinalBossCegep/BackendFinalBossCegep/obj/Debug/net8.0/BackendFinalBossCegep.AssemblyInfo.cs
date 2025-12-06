@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackendFinalBossCegep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7e70c3450e8b530b4cc8da99db2a00a6175b7f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65fbc1b40b7c5bf51774839e298493d77f7d89c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackendFinalBossCegep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackendFinalBossCegep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

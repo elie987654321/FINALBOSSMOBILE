@@ -3,34 +3,14 @@
     "ContainingType": "BackendFinalBossCegep.Controllers.CompteController",
     "Method": "CreateCompte",
     "RelativePath": "Compte/CreateCompte",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "address",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "phone",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "compteJson",
+        "Type": "BackendFinalBossCegep.Model.Compte",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
