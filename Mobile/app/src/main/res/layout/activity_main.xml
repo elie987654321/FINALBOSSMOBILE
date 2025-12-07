@@ -6,21 +6,17 @@
     android:layout_gravity="left"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+
+    <include
+        layout="@layout/toolbar"
+        />
+    <FrameLayout
+        android:id="@+id/mainFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <include
-            layout="@layout/toolbar"
-            />
-        <FrameLayout
-            android:id="@+id/mainFrame"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-    </LinearLayout>
+        />
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/toolbarNavigationView"
+        android:id="@+id/mainNavigationView"
         app:menu="@menu/menu_options"
         android:layout_height="match_parent"
         android:layout_gravity="left"

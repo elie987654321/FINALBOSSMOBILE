@@ -1,21 +1,17 @@
-package com.example.myapplication;
+package com.example.myapplication.Model;
 
 import com.google.gson.annotations.SerializedName;
 
 public class Compte
 {
-    @SerializedName("Id")
     public int id;
-    @SerializedName("Email")
     public String email;
-    @SerializedName("Password")
     public String password;
-    @SerializedName("Name")
     public String name;
-    @SerializedName("Address")
     public String address;
-    @SerializedName("Phone")
     public String phone;
+
+    public int points;
 
     public int getId() {
         return id;
@@ -63,5 +59,13 @@ public class Compte
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 }

@@ -23,6 +23,9 @@ namespace BackendFinalBossCegep.Model
         [Column("phone")]
         public string Phone { get; set; }
 
+        [Column("points")]
+        public int Points { get; set; }
+
         public Compte(string email, string password, string name, string address, string phone) 
         {
             this.Email = email;
@@ -30,6 +33,7 @@ namespace BackendFinalBossCegep.Model
             this.Name = name;
             this.Address = address;
             this.Phone = phone;
+            this.Points = 0;
         }
     }
 }

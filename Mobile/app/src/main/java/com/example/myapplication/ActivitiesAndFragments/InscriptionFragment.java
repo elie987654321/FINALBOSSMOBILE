@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ActivitiesAndFragments;
 
 import android.os.Bundle;
 
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.myapplication.Model.Compte;
+import com.example.myapplication.R;
 import com.google.gson.Gson;
-
-import org.json.JSONObject;
 
 import okhttp3.Headers;
 
