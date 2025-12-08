@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.AnimationUtils;
 
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     NavigationView navigationView;
 
+
     Compte compte;
 
     @Override
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

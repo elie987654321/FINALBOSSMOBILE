@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
@@ -27,6 +30,8 @@ public class MainFragment extends Fragment {
     Button boutonConnexion;
     Button boutonInscription;
 
+    Animation animZoomIn;
+    Animation animZoomOut;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +45,28 @@ public class MainFragment extends Fragment {
 
         boutonConnexion = view.findViewById(R.id.mainFragBoutonConnexion);
         boutonInscription = view.findViewById(R.id.mainFragBoutonInscription);
+
+        animZoomIn = AnimationUtils.loadAnimation(getContext(), R.anim.zoom_in);
+        animZoomOut = AnimationUtils.loadAnimation(getContext(), R.anim.zoom_out);
+
+
+        boutonInscription.startAnimation(animZoomIn);
+        animZoomIn.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                        boutonInscription.startAnimation(animZoomOut);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
         boutonConnexion.setOnClickListener((buttonView) ->
         {
