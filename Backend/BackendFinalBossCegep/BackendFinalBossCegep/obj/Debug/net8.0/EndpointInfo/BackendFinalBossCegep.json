@@ -187,9 +187,17 @@
             "type": "string",
             "nullable": true
           },
-          "type": {
-            "type": "string",
-            "nullable": true
+          "prixPetite": {
+            "type": "number",
+            "format": "float"
+          },
+          "prixMoyenne": {
+            "type": "number",
+            "format": "float"
+          },
+          "prixGrande": {
+            "type": "number",
+            "format": "float"
           },
           "idImage": {
             "type": "integer",

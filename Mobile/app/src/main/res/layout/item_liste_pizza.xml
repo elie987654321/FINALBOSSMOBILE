@@ -17,44 +17,34 @@
 
     <TextView
         android:id="@+id/itemListePizzaSorte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/itemListePizzaSpinnerType"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/itemListePizzaType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/itemListePizzaPrix"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="91dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sorte"
+        app:layout_constraintBottom_toTopOf="@+id/itemListePizzaSpinnerType"
+        app:layout_constraintStart_toStartOf="@+id/itemListePizzaSpinnerType" />
 
     <TextView
         android:id="@+id/itemListePizzaPrix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/itemListePizzaSpinnerType"
-        app:layout_constraintTop_toBottomOf="@+id/itemListePizzaType" />
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:text="Prix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemListePizzaSorte"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/itemListePizzaSpinnerType"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/itemListePizzaBoutonAjouter"
-        app:layout_constraintEnd_toEndOf="@+id/itemListePizzaBoutonAjouter"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/itemListePizzaPrix" />
+        app:layout_constraintEnd_toEndOf="@+id/itemListePizzaBoutonAjouter" />
 
     <Button
         android:id="@+id/itemListePizzaBoutonAjouter"

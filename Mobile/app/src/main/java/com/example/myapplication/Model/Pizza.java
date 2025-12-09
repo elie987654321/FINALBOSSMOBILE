@@ -11,6 +11,16 @@ public class Pizza
 
     private String type;
 
+
+    @SerializedName("PrixPetite")
+    private float prixPetite;
+
+    @SerializedName("PrixMoyenne")
+    private float prixMoyenne;
+
+    @SerializedName("PrixGrande")
+    private float prixGrande;
+
     @SerializedName("idImage")
     private int image;
 
@@ -44,5 +54,29 @@ public class Pizza
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public float getPrixPetite() {
+        return prixPetite;
+    }
+
+    public void setPrixPetite(float prixPetite) {
+        this.prixPetite = prixPetite;
+    }
+
+    public float getPrixMoyenne() {
+        return prixMoyenne;
+    }
+
+    public void setPrixMoyenne(float prixMoyenne) {
+        this.prixMoyenne = prixMoyenne;
+    }
+
+    public float getPrixGrande() {
+        return prixGrande;
+    }
+
+    public void setPrixGrande(float prixGrande) {
+        this.prixGrande = prixGrande;
     }
 }

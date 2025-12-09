@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -34,6 +36,8 @@ public class InscriptionFragment extends Fragment
     Button buttonCreateAccount;
 
     TextView errorTextView;
+
+    Animation spinAnimation;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -96,6 +100,10 @@ public class InscriptionFragment extends Fragment
                 });
             }
         });
+
+        spinAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.spin);
+        buttonCreateAccount.startAnimation(spinAnimation);
+
     }
 
     private boolean ValidateInput()

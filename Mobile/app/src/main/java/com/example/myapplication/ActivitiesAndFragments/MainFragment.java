@@ -49,7 +49,6 @@ public class MainFragment extends Fragment {
         animZoomIn = AnimationUtils.loadAnimation(getContext(), R.anim.zoom_in);
         animZoomOut = AnimationUtils.loadAnimation(getContext(), R.anim.zoom_out);
 
-
         boutonInscription.startAnimation(animZoomIn);
         animZoomIn.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -89,7 +88,6 @@ public class MainFragment extends Fragment {
                             .beginTransaction()
                             .replace(R.id.mainFrame, fragment)
                             .commit();
-
                 }
 
                 @Override
