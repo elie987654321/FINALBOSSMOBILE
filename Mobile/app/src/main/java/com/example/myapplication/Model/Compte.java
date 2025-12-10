@@ -10,7 +10,6 @@ public class Compte
     public String name;
     public String address;
     public String phone;
-
     public int points;
 
     public int getId() {

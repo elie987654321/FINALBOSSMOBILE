@@ -23,27 +23,27 @@
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Courriel"
+            android:hint="@string/courriel"
             />
         <EditText
             android:id="@+id/inscriptionFragPassword"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
+            android:hint="@string/mot_de_passe"
             />
         <EditText
             android:id="@+id/inscriptionFragAdresse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Addresse"
+            android:hint="@string/addresse"
             />
         <EditText
             android:id="@+id/inscriptionFragPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
-            android:hint="Telephone"
+            android:hint="@string/telephone"
             />
         <Button
             android:id="@+id/inscriptionFragButtonCreateAccount"

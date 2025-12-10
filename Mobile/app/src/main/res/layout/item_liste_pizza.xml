@@ -21,7 +21,7 @@
         android:layout_height="19dp"
         android:layout_marginStart="13dp"
         android:layout_marginBottom="16dp"
-        android:text="Sorte"
+        android:text="@string/sorte"
         app:layout_constraintBottom_toTopOf="@+id/itemListePizzaSpinnerType"
         app:layout_constraintStart_toStartOf="@+id/itemListePizzaSpinnerType" />
 
@@ -32,7 +32,7 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="57dp"
-        android:text="Prix"
+        android:text="@string/prix"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/itemListePizzaSorte"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="113dp"
         android:layout_marginEnd="24dp"
-        android:text="AJOUTER"
+        android:text="@string/ajouter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

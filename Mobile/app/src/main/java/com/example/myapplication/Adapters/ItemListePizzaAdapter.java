@@ -14,13 +14,10 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.myapplication.Model.Commande;
 import com.example.myapplication.Model.LigneCommande;
 import com.example.myapplication.Model.Pizza;
 import com.example.myapplication.R;
-
-import java.util.ArrayList;
 
 public class ItemListePizzaAdapter extends BaseAdapter
 {
@@ -74,29 +71,29 @@ public class ItemListePizzaAdapter extends BaseAdapter
         spinnerType.setAdapter(adapter);
 
         spinnerType.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                                                  @Override
-                                                  public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                                      switch (spinnerType.getSelectedItemPosition())
-                                                      {
-                                                          case 0:
-                                                              textPrixPizza.setText(String.valueOf(pizza.getPrixPetite()) + "$");
-                                                              break;
-                                                          case 1:
-                                                              textPrixPizza.setText(String.valueOf(pizza.getPrixMoyenne()) + "$");
-                                                              break;
-                                                          case 2:
-                                                              textPrixPizza.setText(String.valueOf(pizza.getPrixGrande()) + "$");
-                                                              break;
-                                                          default:
-                                                              break;
-                                                      }
-                                                  }
+                  @Override
+                  public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                      switch (spinnerType.getSelectedItemPosition())
+                      {
+                          case 0:
+                              textPrixPizza.setText(String.valueOf(pizza.getPrixPetite()) + "$");
+                              break;
+                          case 1:
+                              textPrixPizza.setText(String.valueOf(pizza.getPrixMoyenne()) + "$");
+                              break;
+                          case 2:
+                              textPrixPizza.setText(String.valueOf(pizza.getPrixGrande()) + "$");
+                              break;
+                          default:
+                              break;
+                      }
+                  }
 
-                                                  @Override
-                                                  public void onNothingSelected(AdapterView<?> adapterView) {
+                  @Override
+                  public void onNothingSelected(AdapterView<?> adapterView) {
 
-                                                  }
-                                              }
+                  }
+              }
         );
 
         boutonAjouter.setOnClickListener((buttonView) ->
