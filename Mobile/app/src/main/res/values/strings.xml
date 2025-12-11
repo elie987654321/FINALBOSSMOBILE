@@ -17,4 +17,8 @@
     <string name="sorte">Sorte</string>
     <string name="prix">Prix</string>
     <string name="ajouter">AJOUTER</string>
+    <string name="total_avec_points">Total avec points</string>
+    <string name="vous_economisez">Vous economisez</string>
+    <string name="utilisez_vos_points">Utilisez vos points</string>
+    <string name="total_price">Total price</string>
 </resources>
