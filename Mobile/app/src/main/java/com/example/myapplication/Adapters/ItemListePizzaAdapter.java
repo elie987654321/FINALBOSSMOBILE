@@ -63,7 +63,7 @@ public class ItemListePizzaAdapter extends BaseAdapter
 
         imagePizza.setImageDrawable(context.getDrawable(pizza.getImage()));
         textSortePizza.setText(pizza.getSorte());
-        textPrixPizza.setText(pizza.getSorte());
+        textPrixPizza.setText(String.valueOf(pizza.getPrixPetite()));
 
         String[] tabTypes = { "petite", "moyenne", "grande" };
         ArrayAdapter<String> adapter = new ArrayAdapter<>(context, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, tabTypes);
@@ -76,13 +76,13 @@ public class ItemListePizzaAdapter extends BaseAdapter
                       switch (spinnerType.getSelectedItemPosition())
                       {
                           case 0:
-                              textPrixPizza.setText(String.valueOf(pizza.getPrixPetite()) + "$");
+                              textPrixPizza.setText(pizza.getPrixPetite() + "$");
                               break;
                           case 1:
-                              textPrixPizza.setText(String.valueOf(pizza.getPrixMoyenne()) + "$");
+                              textPrixPizza.setText(pizza.getPrixMoyenne() + "$");
                               break;
                           case 2:
-                              textPrixPizza.setText(String.valueOf(pizza.getPrixGrande()) + "$");
+                              textPrixPizza.setText(pizza.getPrixGrande() + "$");
                               break;
                           default:
                               break;
@@ -120,5 +120,4 @@ public class ItemListePizzaAdapter extends BaseAdapter
         });
         return  view;
     }
-
 }

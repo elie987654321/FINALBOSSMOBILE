@@ -7,18 +7,18 @@ public class Pizza
 {
     private int id;
 
+    @SerializedName("sorte") 
     private String sorte;
 
-    private String type;
 
 
-    @SerializedName("PrixPetite")
+    @SerializedName("prixPetite")
     private float prixPetite;
 
-    @SerializedName("PrixMoyenne")
+    @SerializedName("prixMoyenne")
     private float prixMoyenne;
 
-    @SerializedName("PrixGrande")
+    @SerializedName("prixGrande")
     private float prixGrande;
 
     @SerializedName("idImage")
@@ -38,14 +38,6 @@ public class Pizza
 
     public void setSorte(String sorte) {
         this.sorte = sorte;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public int getImage() {

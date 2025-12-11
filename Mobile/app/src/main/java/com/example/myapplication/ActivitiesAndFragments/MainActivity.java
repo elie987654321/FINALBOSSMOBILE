@@ -51,14 +51,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener()
-                {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        navigationView.setNavigationItemSelectedListener((view) ->
+               {
                         Fragment fragment ;
 
-                        if(item.getItemId() == R.id.menuItemHome)
+                        if(view.getItemId() == R.id.menuItemHome)
                         {
                             fragment = mainFragment;
                         }
@@ -70,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                         return true;
                     }
-                }
+
         );
 
         getSupportFragmentManager()
