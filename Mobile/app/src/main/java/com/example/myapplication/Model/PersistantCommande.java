@@ -2,19 +2,21 @@ package com.example.myapplication.Model;
 
 import java.time.LocalDate;
 
+
 public class PersistantCommande
 {
-    private int id;
+    private int numeroCommande;
+
     private String nomClient;
     private float montant;
-    private LocalDate dateCommande;
+    private LocalDate date;
 
-    public int getId() {
-        return id;
+    public int getNumeroCommande() {
+        return numeroCommande;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setNumeroCommande(int numeroCommande) {
+        this.numeroCommande = numeroCommande;
     }
 
     public String getNomClient() {
@@ -33,11 +35,11 @@ public class PersistantCommande
         this.montant = montant;
     }
 
-    public LocalDate getDateCommande() {
-        return dateCommande;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setDateCommande(LocalDate dateCommande) {
-        this.dateCommande = dateCommande;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 }

@@ -1,5 +1,32 @@
 [
   {
+    "ContainingType": "BackendFinalBossCegep.Controllers.CommandeController",
+    "Method": "AddCommande",
+    "RelativePath": "Commande/AddCommande",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nomClient",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "montant",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "AddCommande"
+  },
+  {
     "ContainingType": "BackendFinalBossCegep.Controllers.CompteController",
     "Method": "CreateCompte",
     "RelativePath": "Compte/CreateCompte",

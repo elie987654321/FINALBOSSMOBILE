@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\controllers\\comptescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\controllers\\comptescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\controllers\\commandecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\model\\compte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\model\\compte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\model\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|solutionrelative:backendfinalbosscegep\\model\\commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED0E8D8A-24A3-45B7-882D-D80E7988927D}|BackendFinalBossCegep\\BackendFinalBossCegep.csproj|c:\\users\\elie9\\desktop\\finalbossmobile\\backend\\backendfinalbosscegep\\backendfinalbosscegep\\model\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,98 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Pizza.cs",
               "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Pizza.cs",
               "RelativeDocumentMoniker": "BackendFinalBossCegep\\Model\\Pizza.cs",
               "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Pizza.cs",
               "RelativeToolTip": "BackendFinalBossCegep\\Model\\Pizza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T20:09:05.713Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ComptesController.cs",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\ComptesController.cs",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Controllers\\ComptesController.cs",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\ComptesController.cs",
-              "RelativeToolTip": "BackendFinalBossCegep\\Controllers\\ComptesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T13:54:00.737Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PizzaController.cs",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\PizzaController.cs",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Controllers\\PizzaController.cs",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\PizzaController.cs",
-              "RelativeToolTip": "BackendFinalBossCegep\\Controllers\\PizzaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
+              "Title": "Commande.cs",
+              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Commande.cs",
+              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Model\\Commande.cs",
+              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Commande.cs",
+              "RelativeToolTip": "BackendFinalBossCegep\\Model\\Commande.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswA4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:26:46.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T21:18:45.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\appsettings.json",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\appsettings.json",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\appsettings.json",
-              "RelativeToolTip": "BackendFinalBossCegep\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-07T14:38:04.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Program.cs",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Program.cs",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Program.cs",
-              "RelativeToolTip": "BackendFinalBossCegep\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CommandeController.cs",
+              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\CommandeController.cs",
+              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Controllers\\CommandeController.cs",
+              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Controllers\\CommandeController.cs",
+              "RelativeToolTip": "BackendFinalBossCegep\\Controllers\\CommandeController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T14:37:29.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Database\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Database\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Database\\ApplicationDBContext.cs",
-              "RelativeToolTip": "BackendFinalBossCegep\\Database\\ApplicationDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T14:37:11.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Compte.cs",
-              "DocumentMoniker": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Compte.cs",
-              "RelativeDocumentMoniker": "BackendFinalBossCegep\\Model\\Compte.cs",
-              "ToolTip": "C:\\Users\\elie9\\Desktop\\FINALBOSSMOBILE\\Backend\\BackendFinalBossCegep\\BackendFinalBossCegep\\Model\\Compte.cs",
-              "RelativeToolTip": "BackendFinalBossCegep\\Model\\Compte.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T20:26:38.216Z",
+              "WhenOpened": "2025-12-13T21:16:38.354Z",
               "EditorCaption": ""
             }
           ]

@@ -90,7 +90,9 @@ public class InscriptionFragment extends Fragment
                 client.post("http://10.0.2.2:5062/Compte/CreateCompte", jsonCompte,  new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Headers headers, JSON json) {
-                        int t = 0;
+
+                        MainActivity mainActivity = (MainActivity) getActivity();
+                        mainActivity.AddMenuItems();
                     }
 
                     @Override

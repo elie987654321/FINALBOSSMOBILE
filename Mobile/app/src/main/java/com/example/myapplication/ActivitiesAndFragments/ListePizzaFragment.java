@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ import okhttp3.Headers;
 public class ListePizzaFragment extends Fragment
 {
     ListView listViewCommandesPizza;
+    Button buttonPasserCommande;
 
     @Nullable
     @Override
@@ -40,6 +42,7 @@ public class ListePizzaFragment extends Fragment
 
 
         listViewCommandesPizza = view.findViewById(R.id.listePizzaFragListView);
+        buttonPasserCommande = view.findViewById(R.id.listePizzaFragButtonPasserCommande);
 
         AsyncHttpClient client = new AsyncHttpClient();
 
@@ -60,6 +63,15 @@ public class ListePizzaFragment extends Fragment
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
 
             }
+        });
+
+        buttonPasserCommande.setOnClickListener((viewButton) ->
+        {
+            VoirCommandeFragment voirCommandeFragment = new VoirCommandeFragment();
+            getParentFragmentManager().
+                    beginTransaction().
+                    replace(R.id.mainFrame, voirCommandeFragment).
+                    commit();
         });
 
     }

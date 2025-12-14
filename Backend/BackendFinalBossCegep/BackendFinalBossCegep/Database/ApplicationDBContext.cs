@@ -12,5 +12,6 @@ namespace BackendFinalBossCegep.Database
 
         public DbSet<Compte> dbSetComptes { get; set; }
         public DbSet<Pizza> dbSetPizza { get; set; }
+        public DbSet<Commande> dbSetCommande { get; set; }
     }
 }

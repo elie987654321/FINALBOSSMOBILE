@@ -4,9 +4,6 @@ public class Commande
 {
     private PersistantCommande persistantCommande;
 
-    //Les index du tableau de nombre sont les memes que pour la pizza correspondante.
-    // Par exemple, tabNombre[2] == 2 signifie qu'on commende deux exemplaire de la la pizza tabPizza[2]
-
     private LigneCommande[] tabLigneCommande;
 
     public Commande(Pizza[] tabPizza)
@@ -31,5 +28,20 @@ public class Commande
 
     public void setTabLigneCommande(LigneCommande[] tabLigneCommande) {
         this.tabLigneCommande = tabLigneCommande;
+    }
+
+    public float GetTotal()
+    {
+        float total = 0;
+
+        for(int i = 0 ; i < tabLigneCommande.length; i++)
+        {
+            LigneCommande ligneCommande = tabLigneCommande[i];
+            total += ligneCommande.getNombrePetites() * ligneCommande.getPizza().getPrixPetite();
+            total += ligneCommande.getNombreMoyennes() * ligneCommande.getPizza().getPrixMoyenne();
+            total += ligneCommande.getNombreGrandes() * ligneCommande.getPizza().getPrixGrande();
+        }
+
+        return total;
     }
 }

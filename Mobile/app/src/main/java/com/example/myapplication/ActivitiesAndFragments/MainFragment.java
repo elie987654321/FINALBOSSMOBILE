@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -17,6 +18,7 @@ import android.widget.ImageView;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.myapplication.Model.Commande;
 import com.example.myapplication.Model.Compte;
 import com.example.myapplication.R;
 import com.google.gson.Gson;
@@ -24,7 +26,6 @@ import com.google.gson.Gson;
 import okhttp3.Headers;
 
 public class MainFragment extends Fragment {
-
     ImageView imageViewLogo;
 
     Button boutonConnexion;
@@ -60,9 +61,9 @@ public class MainFragment extends Fragment {
         boutonInscription.startAnimation(animZoomIn);
 
         imageViewLogo.setOnClickListener((viewLogo) ->
-        {
-            imageViewLogo.startAnimation(animBigZoomIn);
-        }
+            {
+                imageViewLogo.startAnimation(animBigZoomIn);
+            }
         );
 
         animZoomIn.setAnimationListener(new Animation.AnimationListener() {
@@ -119,6 +120,9 @@ public class MainFragment extends Fragment {
                             .beginTransaction()
                             .replace(R.id.mainFrame, fragment)
                             .commit();
+
+                  MainActivity mainActivity = (MainActivity) getActivity();
+                  mainActivity.AddMenuItems();
                 }
 
                 @Override
@@ -127,6 +131,7 @@ public class MainFragment extends Fragment {
                 }
             });
         });
+
         boutonInscription.setOnClickListener((buttonView) -> {
             InscriptionFragment inscriptionFragment = new InscriptionFragment();
 

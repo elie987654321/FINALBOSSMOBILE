@@ -5,6 +5,44 @@
     "version": "1.0"
   },
   "paths": {
+    "/Commande/AddCommande": {
+      "post": {
+        "tags": [
+          "Commande"
+        ],
+        "operationId": "AddCommande",
+        "parameters": [
+          {
+            "name": "nomClient",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "montant",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Compte/GetCompteByEmailAndPassword": {
       "get": {
         "tags": [

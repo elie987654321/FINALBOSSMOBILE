@@ -1,4 +1,8 @@
 package com.example.myapplication.Model;
 
-public enum PizzaTypeEnum {
+public enum PizzaTypeEnum
+{
+    Petite,
+    Moyenne,
+    Grande
 }

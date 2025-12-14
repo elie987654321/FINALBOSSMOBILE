@@ -19,6 +19,8 @@ import com.example.myapplication.Model.LigneCommande;
 import com.example.myapplication.Model.Pizza;
 import com.example.myapplication.R;
 
+import java.util.function.Consumer;
+
 public class ItemListePizzaAdapter extends BaseAdapter
 {
     private Context context;
@@ -118,6 +120,9 @@ public class ItemListePizzaAdapter extends BaseAdapter
                     break;
             }
         });
+
+
         return  view;
+
     }
 }

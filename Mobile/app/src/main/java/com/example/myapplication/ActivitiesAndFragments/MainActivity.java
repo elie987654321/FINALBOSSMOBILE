@@ -2,6 +2,7 @@ package com.example.myapplication.ActivitiesAndFragments;
 
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
@@ -20,12 +21,12 @@ import com.example.myapplication.Model.Compte;
 import com.example.myapplication.R;
 import com.google.android.material.navigation.NavigationView;
 
-
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     NavigationView navigationView;
 
+    Menu menu;
 
     Compte compte;
 
@@ -43,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,28 +51,57 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        menu = navigationView.getMenu();
+
+        RemoveMenuItems();
+
         navigationView.setNavigationItemSelectedListener((view) ->
-               {
-                        Fragment fragment ;
+           {
 
-                        if(view.getItemId() == R.id.menuItemHome)
-                        {
-                            fragment = mainFragment;
-                        }
+                Fragment fragment = mainFragment;
 
-                        getSupportFragmentManager()
-                                .beginTransaction()
-                                .replace(R.id.mainFrame, mainFragment)
-                                .commit();
+                if(view.getItemId() == R.id.menuItemHome)
+                {
+                    fragment = mainFragment;
+                    RemoveMenuItems();
+                }
+                else if(view.getItemId() == R.id.menuItemPizzas)
+                {
+                    fragment = new ListePizzaFragment();
+                    AddMenuItems();
+                }
+                else if(view.getItemId() == R.id.menuItemMesCommandes)
+                {
+                    fragment = new VoirCommandeFragment();
+                    AddMenuItems();
+                }
 
-                        return true;
-                    }
 
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.mainFrame, fragment)
+                        .commit();
+                return true;
+            }
         );
 
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.mainFrame, mainFragment)
                 .commit();
+    }
+
+    protected void RemoveMenuItems()
+    {
+        menu.removeItem(R.id.menuItemPizzas);
+        menu.removeItem(R.id.menuItemMesCommandes);
+    }
+
+    protected void AddMenuItems()
+    {
+        RemoveMenuItems();
+        menu.add(Menu.NONE, R.id.menuItemMesCommandes, Menu.NONE, "Commandes");
+        menu.add(Menu.NONE, R.id.menuItemPizzas, Menu.NONE, "Pizzas");
+
     }
 }

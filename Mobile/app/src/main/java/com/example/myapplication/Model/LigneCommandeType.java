@@ -1,23 +1,30 @@
 package com.example.myapplication.Model;
 
-public class PizzaType
+//Class cree parse qu'il faut donner un array que quelque chose en parametres aux adapteurs
+public class LigneCommandeType
 {
-    private Pizza pizza;
-    private PizzaTypeEnum type;
+    private LigneCommande ligneCommande;
+    private PizzaTypeEnum typePizza;
 
-    public Pizza getPizza() {
-        return pizza;
+    public LigneCommandeType(LigneCommande ligneCommande, PizzaTypeEnum typePizza)
+    {
+        this.ligneCommande = ligneCommande;
+        this.typePizza = typePizza;
     }
 
-    public void setPizza(Pizza pizza) {
-        this.pizza = pizza;
+    public LigneCommande getLigneCommande() {
+        return ligneCommande;
     }
 
-    public PizzaTypeEnum getType() {
-        return type;
+    public void setLigneCommande(LigneCommande ligneCommande) {
+        this.ligneCommande = ligneCommande;
     }
 
-    public void setType(PizzaTypeEnum type) {
-        this.type = type;
+    public PizzaTypeEnum getTypePizza() {
+        return typePizza;
+    }
+
+    public void setTypePizza(PizzaTypeEnum typePizza) {
+        this.typePizza = typePizza;
     }
 }
