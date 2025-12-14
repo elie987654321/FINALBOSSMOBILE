@@ -1,6 +1,5 @@
 ﻿using BackendFinalBossCegep.Database;
 using BackendFinalBossCegep.Model;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendFinalBossCegep.Controllers

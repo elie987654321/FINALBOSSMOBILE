@@ -102,34 +102,12 @@ public class MainFragment extends Fragment {
 
         boutonConnexion.setOnClickListener((buttonView) ->
         {
-            AsyncHttpClient client = new AsyncHttpClient();
+            ConnexionFragment connexionFragment = new ConnexionFragment();
 
-            RequestParams params = new RequestParams();
-            params.put("email", "allo@allo.allo");
-            params.put("password", "12345678");
-            client.get("http://10.0.2.2:5062/Compte/GetCompteByEmailAndPassword", params, new JsonHttpResponseHandler() {
-                @Override
-                public void onSuccess(int statusCode, Headers headers, JSON json) {
-                    String jsonObjectString =  json.jsonObject.toString();
-                    Compte compte = new Gson().fromJson(jsonObjectString, Compte.class);
-                    com.example.myapplication.Cache.getInstance().setCompte(compte);
-
-                    ListePizzaFragment fragment = new ListePizzaFragment();
-
-                    getParentFragmentManager()
-                            .beginTransaction()
-                            .replace(R.id.mainFrame, fragment)
-                            .commit();
-
-                  MainActivity mainActivity = (MainActivity) getActivity();
-                  mainActivity.AddMenuItems();
-                }
-
-                @Override
-                public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-
-                }
-            });
+            getParentFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.mainFrame, connexionFragment)
+                    .commit();
         });
 
         boutonInscription.setOnClickListener((buttonView) -> {

@@ -1,5 +1,6 @@
 package com.example.myapplication.ActivitiesAndFragments;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,7 +64,6 @@ public class VoirCommandeFragment extends Fragment
         super.onViewCreated(view, savedInstanceState);
 
         commande = Cache.getInstance().getCommande();
-
 
         consumerUpdateInfos = (Void) -> { UpdaterInfos(); };
 
@@ -130,12 +130,12 @@ public class VoirCommandeFragment extends Fragment
 
         client.post("http://10.0.2.2:5062/Commande/AddCommande", new RequestHeaders(), requestParams, "", new AbsCallback() {
             @Override
-            public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                int t = 0;
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                AlertDialog alertDialog = new AlertDialog();
             }
 
             @Override
-            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 int t = 0;
             }
         });

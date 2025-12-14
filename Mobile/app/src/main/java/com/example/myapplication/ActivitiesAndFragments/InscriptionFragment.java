@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.myapplication.Cache;
 import com.example.myapplication.Model.Compte;
 import com.example.myapplication.R;
 import com.google.gson.Gson;
@@ -42,9 +43,6 @@ public class InscriptionFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-
         return inflater.inflate(R.layout.fragment_inscription, container, false);
     }
 
@@ -82,17 +80,22 @@ public class InscriptionFragment extends Fragment
                 compte.name = editTextName.getText().toString();
 
                 Gson gson = new Gson();
-
-
-
                 String jsonCompte = gson.toJson(compte);
 
                 client.post("http://10.0.2.2:5062/Compte/CreateCompte", jsonCompte,  new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Headers headers, JSON json) {
+                        ListePizzaFragment fragment = new ListePizzaFragment();
+
+                        Cache.getInstance().setCompte(compte);
 
                         MainActivity mainActivity = (MainActivity) getActivity();
                         mainActivity.AddMenuItems();
+
+                        getParentFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.mainFrame, fragment)
+                                .commit();
                     }
 
                     @Override

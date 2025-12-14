@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
- <group android:checkableBehavior="single">
-     <item
-         android:id="@+id/menuItemHome"
-         android:icon="@android:mipmap/sym_def_app_icon"
-         android:title="Accueil" />
-     <item
-         android:id="@+id/menuItemPizzas"
-         android:icon="@android:mipmap/sym_def_app_icon"
-         android:title="Pizza"/>
-     <item
-         android:id="@+id/menuItemMesCommandes"
-         android:icon="@android:mipmap/sym_def_app_icon"
-         android:title="Mes commandes"/>
- </group>
+     <group android:checkableBehavior="single">
+         <item
+             android:id="@+id/menuItemHome"
+             android:icon="@android:mipmap/sym_def_app_icon"
+             android:title="Accueil" />
+     </group>
+    <group>
+        <item
+            android:id="@+id/menuItemPizzas"
+            android:icon="@android:mipmap/sym_def_app_icon"
+            android:title="Pizza"/>
+        <item
+            android:id="@+id/menuItemMesCommandes"
+            android:icon="@android:mipmap/sym_def_app_icon"
+            android:title="Mes commandes"/>
+    </group>
 </menu>
